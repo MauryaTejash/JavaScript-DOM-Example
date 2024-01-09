@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Example</title>
+</head>
+<body>
+    <button onclick="
+        document.querySelector('.js-select').innerHTML = 'You choose:Heads';">
+        Heads
+    </button>
+
+    <button class="js" onclick="document.querySelector('.js-select').innerHTML = 'You choose:Tails';">tails</button>
+    <p class="js-select"></p>
+
+    <input placeholder="Name" class="js-name">
+    <button onclick="
+    const value1 = document.querySelector('.js-name');
+    document.querySelector('.js-data').innerHTML = `Your name is:${value1.value}`;">
+    Submit</button>
+    <p class="js-data"></p>
+    <script>
+
+        //use of query selector
+
+    //    const value = document.querySelector('button');
+    //    const value2 = document.querySelector('.js').innerHTML = 'You choose:`${js}`';
+
+        
+        //to use the DOM for getting Body content
+        // console.log(document.body);
+        // console.log(document.body.innerHTML);
+        // document.body.innerHTML = '<button>Tejash</button>';
+
+        //this is DOM build-in object
+        // document.body.innerHTML='Tejash';
+        // document.title = 'Dom';
+    </script>
+</body>
+</html>
